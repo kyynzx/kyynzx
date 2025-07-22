@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Araa</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f8ff;
+      text-align: center;
+      padding: 50px;
+    }
+
+    h1 {
+      color: #2c3e50;
+    }
+
+    img {
+      border-radius: 20px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+      width: 200px;
+    }
+
+    form {
+      margin-top: 20px;
+    }
+
+    input {
+      padding: 10px;
+      width: 200px;
+      border: 2px solid #3498db;
+      border-radius: 8px;
+    }
+
+    button {
+      margin-top: 10px;
+      padding: 10px 20px;
+      background-color: #3498db;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #2980b9;
+    }
+  </style>
+</head>
+<body>
+  <h1>TIARA AULIA BAHRI</h1>
+
+  <img src="araa.jpg" alt="araa" />
+
+  <form onsubmit="tampilkanPesan(event)">
+    <p>
+      <label for="pujian"></label><br />
+      <input type="text" id="pujian" name="pujian" placeholder="Silahkan Puji Aku" />
+    </p>
+    <button type="submit">Kirim</button>
+  </form>
+
+  <script>
+    function tampilkanPesan(event) {
+      event.preventDefault(); // Mencegah reload
+      const nomor = document.getElementById("pujian").value;
+
+      if (pujian === "") {
+        alert("Puji Aku Dong.");
+      } else {
+        alert("Terima kasih, aku emang cantik: " + pujian);
+      }
+    }
+  </script>
+</body>
+</html>
